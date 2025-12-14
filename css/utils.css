@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  padding: 0 var(--padding);
+  max-width: calc(var(--container-width) + var(--padding) * 2);
+  margin-inline: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: var(--duration);
+  z-index: 10;
+}
+
+.active.overlay {
+  opacity: 1;
+}

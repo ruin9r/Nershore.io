@@ -1,0 +1,157 @@
+.footer {
+  padding: 0 85px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+  row-gap: 30px;
+}
+.footer__product {
+  padding-top: 32px;
+  padding-right: 20px;
+}
+.footer__information {
+  padding-top: 32px;
+  padding-right: 20px;
+}
+
+.footer__company {
+  padding-right: 20px;
+  padding-top: 32px;
+}
+
+
+
+.footer__subscribe {
+  max-width: 369px;
+  padding: 32px 46px;
+}
+
+.footer__label {
+  position: relative;
+  display: block;
+  padding: 19px 0 14px 24px;
+  width: 100%;
+  border: var(--border-input);
+  border-radius: var(--border-radius-input);
+  background: var(--white);
+  margin-bottom: 20px;
+}
+
+.footer__input {
+  color: var(--gray-200);
+  opacity: 0.6;
+}
+
+.footer__input::placeholder {
+  color: var(--gray-200);
+  opacity: 0.6;
+}
+
+.footer__label:focus-within{
+  outline: 2px dashed var(--gray-200);
+  outline-offset: 3px;
+}
+
+.footer__label:has(.footer__input:required) {
+  outline: 2px dashed indianred;
+  outline-offset: 3px;
+}
+
+
+
+.footer__submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 55px;
+  height: 50px;
+  background: var(--gradient-blue);
+  border-radius: var(--border-radius-input);
+  padding: 19px;
+}
+
+.footer__submit:hover {
+  background-color: #2d5cad;
+
+}
+
+.footer__desc {
+  font-size: 12px;
+  color: var(--gray-200);
+  line-height: 1.7;
+  opacity: 0.6;
+}
+
+.footer__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  row-gap: 30px;
+  padding: 29px 0;
+  border-top: var(--border-divider-footer);
+}
+
+.footer__legals {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+
+.footer__link {
+  font-size: 14px;
+  color: var(--gray-200);
+}
+
+.footer__link:hover {
+  color: var(--gray-200);
+  opacity: 0.5;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.socials__link {
+  padding: 12px 14px;
+  border: var(--border-input);
+  border-radius: var(--border-radius-full);
+}
+
+.socials__link:hover {
+  background: var(--gray-100);
+  opacity: 0.2;
+}
+
+.socials__link--fb {
+  padding: 12px 17px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 0 23px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .footer__content {
+    margin-bottom: 49px;
+  }
+  
+  .footer__subscribe {
+    max-width: 100%;
+  }
+}
+
+
+
+

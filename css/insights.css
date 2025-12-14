@@ -1,0 +1,148 @@
+.insights__inner {
+  margin-bottom: 133px;
+}
+
+.insights__title {
+  margin-bottom: 45px;
+}
+
+.insights__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.insights__poster {
+  border-radius: var(--border-poster);
+  overflow: hidden;
+  margin-bottom: 19px;
+}
+
+.insights__item {
+  width: 100%;
+  max-width: 535px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  position: relative;
+  transition-duration: var(--duration);
+}
+
+.insights__item:hover {
+  background: var(--gray-100);
+}
+
+.insights__item:hover .insights__img {
+  transform: scale(1.3);
+  transition-duration: var(--duration);
+}
+
+.insights__name {
+  display: inline-block;
+  font-family: "Epilogue Medium", sans-serif;
+  font-size: 24px;
+
+  line-height: 1.33333;
+  color: var(--nav-items);
+  margin-bottom: 19px;
+}
+
+.insights__name::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.insights__text {
+  line-height: 1.5;
+  margin-bottom: 47px;
+}
+
+.insights__author {
+  position: relative;
+  font-family: "Epilogue Medium", sans-serif;
+  font-size: 15px;
+
+  line-height: 1.5;
+  color: var(--nav-items);
+  padding: 6px 0 6px 53px;
+}
+
+.insights__author::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../icons/insights/fig-orange.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  width: 38px;
+  height: 34px;
+}
+
+.insights__navigation {
+  text-align: center;
+}
+
+.insights__button {
+  display: inline-block;
+  border-radius: 100%;
+  background: var(--gray-100);
+  padding: 17px;
+  text-align: center;
+}
+
+.insights__button--prev {
+  margin-right: 18px;
+}
+
+.insights__button--next img {
+  transform: rotate(180deg);
+}
+
+
+.insights__button--prev.disabled,
+.insights__button--next.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+@media (max-width: 992px) {
+  .insights__item {
+    padding: 19px;
+  }
+
+  .insights__name {
+    font-size: 16px;
+    margin-bottom: 11px;
+    max-width: 315px;
+  }
+
+  .insights__text {
+    font-size: 12px;
+    margin-bottom: 27px;
+  }
+}
+
+@media (max-width: 768px) {
+  .insights__inner {
+    margin-bottom: 153px;
+  }
+  
+  .insights__navigation {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  .insights__title {
+    font-size: 26px;
+    margin-bottom: 37px;
+  }
+
+}

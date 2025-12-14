@@ -1,0 +1,54 @@
+:root {
+  --white: #ffffff;
+  --text: #525252;
+  --yellow: #f3bc4c;
+  --burger: #292d32;
+  --nav-items: #3d3d3d;
+  --gray-100: #f7f7fd;
+  --gray-200: #0a142f;
+  --gray-300: #f0f0f6;
+  --gray-400: #e7e8f2;
+  --text-testimonials: #6e6c83;
+  --title-testimonials: #1e1b39;
+  --lang-button: #424242;
+  --purple-100: #3056d3;
+  --purple-200: #5e5def;
+  --purple-300: #3171de;
+  --green: #66b066;
+  --gradient-white: linear-gradient(90deg, #fff 0%, #fff 25.52%, rgba(255, 255, 255, 0.74) 42.19%, rgba(255, 255, 255, 0) 63.02%);
+  --gradient-blue: linear-gradient(180deg, #3171de 0%);
+  --gradient-blue-card: linear-gradient(200deg, #3171de 0%, #4ac0f2 100%);
+  --gradient-green: linear-gradient(180deg, #62ae6e 0%, #ede14f 100%);
+  --gradient-green-card: linear-gradient(201deg, #62ae6e 0%, #ede14f 100%);
+  --gradient-purple: linear-gradient(180deg, #3171de 0%, #704af2 100%);
+  --gradient-title: linear-gradient(180deg, #3171de 0%, #4ac0f2 100%);
+
+  --font-family: "Epilogue Regular";
+  --font-size: 16px;
+
+  --container-width: 1339px;
+  --padding: 15px;
+  --opacity: 0.5;
+
+  --duration: 0.3s;
+  --border-testimonials: 1px solid var(--gray-300);
+  --border-divider: 1px solid #dedee9;
+  --border-divider-footer: 1px solid #f1f1f3;
+  --border-input: 1.50px solid var(--gray-400);
+  --border-radius-button: 50px;
+  --border-radius: 35px;
+  --border-radius-input: 30px;
+  --border-radius-full: 50%;
+  --border-banner: 27px;
+  --border-poster: 15px;
+  --border-radius-testimonials: 22px;
+  --box-shadow-cards: 0 6px 14px 0 rgba(0, 0, 0, 0.13);
+  --box-shadow-testimonials: 0 3px 9px 0 rgba(13, 10, 44, 0.06);
+
+  --breakpoint-wide: 1400px;
+  --breakpoint-desktop: 1200px;
+  --breakpoint-tablet: 992px;
+  --breakpoint-mobile: 768px;
+  --breakpoint-mobile-extra: 576px;
+
+}

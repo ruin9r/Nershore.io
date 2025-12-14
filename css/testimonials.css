@@ -1,0 +1,262 @@
+.testimonials {
+  padding-bottom: 74px;
+  position: relative;
+}
+
+
+.testimonials__header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+.testimonials__image {
+  width: 100%;
+  max-width: 708px;
+}
+
+.testimonials__content {
+  width: 100%;
+  max-width: 553px;
+}
+
+.testimonials__title {
+  margin-bottom: 38px;
+}
+
+.testimonials__desc {
+  width: 100%;
+  max-width: 403px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.testimonials__inner {
+  transform: translateY(-154px);
+}
+
+
+.testimonials__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 79px;
+}
+
+
+.testimonials__feedback {
+  padding: 35px;
+  
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border: var(--border-testimonials);
+  border-radius: var(--border-radius-testimonials);
+  box-shadow: var(--box-shadow-testimonials);
+}
+
+.testimonials__feedback:nth-child(odd) .testimonials__person::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 0;
+  transform: translate(25%, -50%);
+  background: url('../icons/testimonials/visionary-apps.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 39px;
+  height: 45px;
+}
+
+.testimonials__feedback:nth-child(even) .testimonials__person::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 0;
+  transform: translate(35%, -45%);
+  background: url('../icons/testimonials/tech-craft.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 33px;
+  height: 39px;
+}
+
+.testimonials__stars {
+  display: inline-block;
+  margin-bottom: 35px;
+}
+
+.testimonials__quote {
+  font-family: "DMSans Bold", sans-serif;
+  font-size: 24px;
+
+  line-height: 1.50383;
+  color: var(--title-testimonials);
+  margin-bottom: 9px;
+}
+
+.testimonials__text {
+  font-family: "DM Sans Regular", sans-serif;
+  font-size: 17px;
+
+  line-height: 1.75;
+  color: var(--text-testimonials);
+  flex: 1;
+  margin-bottom: 35px;
+}
+
+
+
+.testimonials__person {
+  margin-top: auto;
+  position: relative;
+  padding-top: 21px;
+  padding-left: 57px;
+  border-top: var(--border-divider);
+}
+
+.testimonials__name {
+  font-family: "DMSans Bold", sans-serif;
+  font-size: 20px;
+  line-height: 1.35714;
+  color: var(--title-testimonials);
+  margin-bottom: 3px;
+}
+
+.testimonials__post {
+  font-family: "DM Sans Bold", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+
+  line-height: 1.1;
+  color: var(--text-testimonials);
+}
+
+.testimonials__buttons {
+  text-align: center;
+}
+
+.testimonials__button {
+  display: inline-block;
+  border-radius: 100%;
+  background: var(--gray-100);
+  padding: 17px;
+}
+
+.testimonials__button--prev {
+  margin-right: 18px;
+}
+
+.testimonials__button--next img {
+  transform: rotate(180deg);
+}
+
+.testimonials__button--prev.disabled,
+.testimonials__button--next.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+@media (max-width: 1285px) {
+  
+}
+
+@media (max-width: 992px) {
+  .testimonials__header {
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .testimonials__content, .testimonials__image, .testimonials__title  {
+    text-align: center;
+  }
+  
+  .testimonials__desc {
+    text-align: center;
+    margin: 0 auto 45px;
+  }
+
+  .testimonials__inner {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding-bottom: 69px;
+  }
+  .testimonials__header {
+    gap: 38px;
+  }
+  
+  .testimonials__img {
+    max-width: 299px;
+  }
+
+  .testimonials__title {
+    font-size: 26px;
+    max-width: 257px;
+    margin: 0 auto 18px;
+  }
+
+  .testimonials__desc {
+    font-size: 12px;
+  }
+
+  .testimonials__stars {
+    max-width: 103px;
+    margin-bottom: 23px;
+  }
+
+  .testimonials__quote {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .testimonials__text {
+    font-size: 11px;
+    margin-bottom: 23px;
+  }
+
+  .testimonials__feedback:nth-child(odd) .testimonials__person::before {
+    width: 22px;
+    height: 22px;
+  }
+  .testimonials__feedback:nth-child(even) .testimonials__person::before {
+    width: 22px;
+    height: 22px;
+  }
+
+  .testimonials__list {
+    margin-bottom: 27px;
+  }
+
+  .testimonials__person {
+    padding-left: 37px;
+    padding-top: 11px;
+  }
+
+  .testimonials__name {
+    font-size: 13px;
+    margin-bottom: 1px;
+  }
+
+  .testimonials__post {
+    font-size: 8px;
+  }
+
+  .testimonials__button {
+    width: 43px;
+    height: 43px;
+  }
+
+  .testimonials__button--prev {
+    margin-right: 12px;
+  }
+
+}
+
+
+

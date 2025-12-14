@@ -1,0 +1,155 @@
+.teams {
+  padding-top: 72.5px;
+  text-align: center;
+}
+
+.teams__title {
+  display: inline-block;
+  font-family: "Epilogue Medium", sans-serif;
+  font-size: 32px;
+  color: var(--nav-items);
+  line-height: 1.875;
+  margin-bottom: 45px;
+}
+
+.teams__title--purple {
+  background-clip: text;
+  background: var(--gradient-purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.teams__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+  padding: 32px 65px 32px 65px;
+  box-shadow: var(--box-shadow-cards);
+  border-radius: var(--border-radius);
+  margin-bottom: 195px;
+}
+
+.teams__card {
+  position: relative;
+  padding-top: 85px;
+  width: 100%;
+  max-width: 344px;
+}
+
+.teams__card--front::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../icons/teams/monitor.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+
+.teams__card--back::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../icons/teams/file.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+
+.teams__card--data::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../icons/teams/driver.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+
+
+.teams__name {
+  font-size: 28px;
+  line-height: 1.42857;
+  margin-bottom: 8px;
+  color: var(--nav-items);
+}
+
+.teams__desc {
+  line-height: 1.5;
+}
+
+@media (max-width: 1219px) {
+  .teams__cards {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 1141px) {
+  .teams__cards {
+    margin-inline: auto;
+    max-width: 700px;
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .teams__title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .teams {
+    text-align: center;
+    padding-top: 42px;
+  }
+
+  .teams__title {
+    font-size: 24px;
+  }
+
+  .teams__cards {
+    margin-inline: auto;
+    padding: 34px 32px;
+    margin-bottom: 98px;
+    gap: 17px;
+  }
+
+  .teams__card {
+    padding-top: 52px;
+  }
+
+  .teams__card--front::before, .teams__card--back::before, .teams__card--data::before {
+    width: 36px;
+    height: 36px;
+  }
+
+  .teams__name {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .teams__desc {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 551px) {
+  .teams {
+    text-align: start;
+  }
+
+  .teams__title {
+    max-width: 267px;
+  }
+} 
+

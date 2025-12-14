@@ -1,0 +1,145 @@
+
+
+.choose-us {
+  padding-bottom: 253px;
+}
+.choose-us__inner {
+  padding: 70px 0;
+}
+
+.choose-us__title {
+  margin-inline: auto;
+  max-width: 802px;
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+.choose-us__swiper {
+  display: flex;
+  align-items: center;
+  row-gap: 38px;
+}
+
+.choose-us__card {
+  max-width: 385px;
+  padding: 37px 28px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-cards);
+  background-color: var(--white);
+}
+
+.choose-us__card:first-child {
+  margin-left: 13px;
+}
+
+.choose-us__card--green-gradient {
+  background: var(--gradient-green-card);
+}
+
+.choose-us__card--blue-gradient {
+  background: var(--gradient-blue-card);
+}
+
+
+.choose-us__name {
+  font-family: "Epilogue Medium", sans-serif;
+  font-size: 24px;
+
+  line-height: 1.33333;
+  color: var(--nav-items);
+  margin-bottom: 19px;
+}
+
+.choose-us__text {
+  line-height: 1.5;
+}
+
+.choose-us__name--white, .choose-us__text--white {
+  color: var(--white);
+}
+
+.choose-us__swiper {
+  margin-bottom: 41px;
+}
+
+.choose-us__navigation {
+  text-align: center;
+}
+
+.choose-us__button {
+  display: inline-block;
+  border-radius: 100%;
+  background: var(--white);
+  padding: 17px;
+  text-align: center;
+}
+
+.choose-us__button--prev {
+  margin-right: 18px;
+}
+
+.choose-us__button--next img {
+  transform: rotate(180deg);
+}
+
+
+.choose-us__button--prev.disabled,
+.choose-us__button--next.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+@media (max-width: 992px) {
+  .choose-us__card {
+    padding: 27px 22px;
+  }
+
+  .choose-us__name {
+    font-size: 17px;
+    max-width: 239px;
+    margin-bottom: 14px;
+  }
+  
+  .choose-us__text {
+    font-size: 11px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .choose-us__title {
+    font-size: 26px;
+    max-width: 622px;
+    margin-bottom: 41px;
+  }
+
+  .choose-us__inner {
+    padding: 72px 0;
+  }
+  .choose-us__button {
+    width: 43px;
+    height: 43px;
+  }
+
+  .choose-us__button--prev {
+    margin-right: 12px;
+  }
+
+  .choose-us {
+    padding-bottom: 150px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .choose-us {
+    padding-bottom: 101px;
+  }
+  
+  .choose-us__title {
+    max-width: 263px;
+  }
+
+}
+
+

@@ -1,0 +1,261 @@
+
+.services__title {
+  position: relative;
+  font-family: "Epilogue Medium", sans-serif;
+  font-size: 40px;
+  line-height: 1.5;
+  padding-left: 99px;
+  color: var(--nav-items);
+  max-width: 731px;
+  margin: 0 auto 79px;
+}
+
+.services__title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../image/services/blue-figure.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 91px;
+  height: 81px;
+}
+
+.services__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 52px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+
+  margin-inline: 42px;
+  margin-bottom: 143px;
+}
+
+.services__card {
+  position: relative;
+  padding: 0 28px 38px 28px;
+  max-width: 385px;
+  box-shadow: var(--box-shadow-cards);
+  border-radius: var(--border-radius);
+}
+
+.services__card--software {
+  padding-top: 103px;
+}
+
+.services__card--software::before {
+  content: '';
+  position: absolute;
+  top: 27px;
+  left: 28px;
+  background: url('../icons/services/document.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+
+.services__card--qa {
+  padding-top: 154px;
+}
+
+.services__card--qa::before {
+  content: '';
+  position: absolute;
+  top: 27px;
+  left: 28px;
+  background: url('../icons/services/settings.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+
+.services__card--ai {
+  padding-top: 154px;
+}
+
+.services__card--ai::before {
+  content: '';
+  position: absolute;
+  top: 27px;
+  left: 28px;
+  background: url('../icons/services/data.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+
+.services__card--ux {
+  padding-top: 154px;
+}
+
+.services__card--ux::before {
+  content: '';
+  position: absolute;
+  top: 27px;
+  left: 28px;
+  background: url('../icons/services/brush.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+
+.services__card--mobile {
+  padding-top: 111px;
+}
+
+.services__card--mobile::before {
+  content: '';
+  position: absolute;
+  top: 27px;
+  left: 28px;
+  background: url('../icons/services/mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+
+.services__card--platform {
+  padding-top: 111px;
+}
+
+.services__card--platform::before {
+  content: '';
+  position: absolute;
+  top: 27px;
+  left: 28px;
+  background: url('../icons/services/shapes.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+
+.services__heading {
+  font-family: "Epilogue Medium", sans-serif;
+  font-size: 28px;
+  line-height: 1.42857;
+  color: var(--nav-items);
+  margin-bottom: 19px;
+}
+
+.services__desc {
+  line-height: 1.5;
+}
+
+@media (max-width: 1258px) {
+  .services__cards {
+    margin-inline: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .services__title {
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
+
+  .services__cards {
+    column-gap: 35px;
+    row-gap: 35px;
+  }
+
+  .services__card {
+    max-width: 220px;
+    padding: 0 22px 15px 22px;
+  }
+
+  .services__card--software {
+    padding-top: 102px;
+  }
+
+  .services__card--software::before {
+    width: 37px;
+    height: 38px;
+  }
+
+  .services__card--qa {
+    padding-top: 132px;
+  }
+
+  .services__card--ai::before {
+    width: 37px;
+    height: 38px;
+  }
+
+  .services__card--ai {
+    padding-top: 132px;
+  }
+
+  .services__card--qa::before {
+    width: 37px;
+    height: 38px;
+  }
+
+  .services__card--ux {
+    padding-top: 156px;
+  }
+
+  .services__card--ux::before {
+    width: 37px;
+    height: 38px;
+  }
+
+  .services__card--mobile {
+    padding-top: 132px;
+  }
+
+  .services__card--mobile::before {
+    width: 37px;
+    height: 38px;
+  }
+
+  .services__card--platform {
+    padding-top: 114px;
+  }
+
+  .services__card--platform::before {
+    width: 37px;
+    height: 38px;
+  }
+
+  .services__heading {
+    font-size: 20px;
+  }
+
+  .services__desc {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services__title {
+    font-size: 24px;
+    padding-left: 79px;
+  }
+
+  .services__title::before {
+    width: 66px;
+    height: 59px;
+    margin-bottom: 27px;
+  }
+}
+
+@media (max-width: 491px) {
+  .services__cards {
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: nowrap;
+    gap: 0;
+    padding-left: 15px;
+  }
+}
+
+
